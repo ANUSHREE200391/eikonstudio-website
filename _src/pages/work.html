@@ -1,0 +1,55 @@
+<main id="main">
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="wrap ph-grid">
+      <div>
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="page-title" class="display h-xl">Our <span class="hl">work.</span></h1>
+        <p class="lead">Photography, reels and creative for jewellery, fashion and food brands. Tap any piece to see it bigger.</p>
+      </div>
+      <div class="cat-card pose-hover"><img class="pose" src="{{B}}assets/img/cat/cat-shoot.webp" alt="eikon cat taking a photo" width="240" height="215"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:48px" aria-label="Projects">
+    <div class="wrap">
+      <div class="filters" id="filters" role="group" aria-label="Filter work by category"></div>
+      <p class="sr-only" id="filter-status" aria-live="polite"></p>
+      <div class="work-grid" id="work-grid" data-base="{{B}}"></div>
+      <div class="work-empty" id="work-empty" hidden>
+        <span class="soon-badge lg">Coming soon</span>
+      </div>
+      <noscript><p>Please turn on JavaScript to browse the portfolio, or <a href="{{ig}}">see our work on Instagram</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section bg-ink cta-final" aria-labelledby="cta-title">
+    <div class="wrap cta-grid">
+      <div>
+        <p class="eyebrow">Like what you see?</p>
+        <h2 id="cta-title" class="display h-lg">Your brand <span class="text-pink">could be next.</span></h2>
+        <div class="btn-row" style="margin-top:28px">
+          <a class="btn btn-pink" href="{{B}}contact/">Contact us <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-cream" href="{{ig}}" target="_blank" rel="noopener">More on Instagram</a>
+        </div>
+      </div>
+      <div class="cat-card pose-hover"><img class="pose" src="{{B}}assets/img/cat/cat-create.webp" alt="eikon cat working on a laptop" loading="lazy" width="250" height="215"></div>
+    </div>
+  </section>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <button class="lb-btn lb-close" type="button" data-close aria-label="Close">✕</button>
+    <div class="lb-inner">
+      <div class="lb-media"></div>
+      <div class="lb-info">
+        <span class="cat"></span>
+        <h2 id="lb-title"></h2>
+        <p class="lb-desc"></p>
+        <div class="lb-nav">
+          <button class="lb-btn" type="button" data-prev aria-label="Previous project">← Prev</button>
+          <button class="lb-btn" type="button" data-next aria-label="Next project">Next →</button>
+        </div>
+        <span class="lb-count"></span>
+      </div>
+    </div>
+  </dialog>
+</main>

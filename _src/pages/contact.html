@@ -1,0 +1,61 @@
+<main id="main">
+  <section class="page-hero bg-ink" aria-labelledby="page-title">
+    <div class="wrap ph-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1 id="page-title" class="display h-xl">Let's make you <span class="text-pink">stand out.</span></h1>
+        <p class="lead muted">Tell us about your brand and what you need. We'll get back to you.</p>
+      </div>
+      <div class="cat-card pose-hover"><img class="pose" src="{{B}}assets/img/cat/cat-grow.webp" alt="eikon cat giving a thumbs up" width="250" height="210"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Get in touch">
+    <div class="wrap contact-grid">
+      <div class="form-card">
+        <h2 class="display h-md" style="margin-bottom:8px">Start a project</h2>
+        <p class="muted">Fields marked <span style="color:#B0005F">*</span> are required.</p>
+        <form data-enquiry>
+          <input type="hidden" name="_subject" value="New website enquiry">
+          <input type="hidden" name="form" value="Contact page">
+          <input type="hidden" name="_template" value="table">
+          <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-grid">
+            <div class="field"><label for="c-name">Name <span class="req">*</span></label><input id="c-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
+            <div class="field"><label for="c-email">Email address <span class="req">*</span></label><input id="c-email" name="email" type="email" autocomplete="email" required><span class="err">Please enter a valid email address.</span></div>
+            <div class="field"><label for="c-brand">Business / brand name <span class="opt">(optional)</span></label><input id="c-brand" name="brand" autocomplete="organization"></div>
+            <div class="field"><label for="c-service">Service interest <span class="req">*</span></label>
+              <select id="c-service" name="service" required>
+                <option value="">Choose a service</option>
+                <option>Social media management</option>
+                <option>Performance marketing &amp; Meta ads</option>
+                <option>Content production</option>
+                <option>Digital business setup</option>
+                <option>Influencer &amp; creator marketing</option>
+                <option>Creator network</option>
+                <option>Not sure yet</option>
+              </select><span class="err">Please choose a service.</span>
+            </div>
+            <div class="field full"><label for="c-msg">What do you need? <span class="req">*</span></label><textarea id="c-msg" name="message" placeholder="Tell us about your brand, your goals and any timelines" required></textarea><span class="err">Please tell us a little about your project.</span></div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-pink" type="submit"><span class="spinner" aria-hidden="true"></span>Send enquiry</button>
+            <button class="btn btn-ghost" type="button" data-whatsapp>Send on WhatsApp</button>
+          </div>
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <p class="form-fine">Your details are only used to reply to your enquiry.</p>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="eyebrow" style="font-size:.8rem">Or reach us directly</h2>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:{{email}}"><span class="ic">{{icon:mail}}</span><span><small>Email</small><strong>{{email}}</strong></span></a>
+          <a class="contact-item" href="{{wa}}" target="_blank" rel="noopener"><span class="ic">{{icon:whatsapp}}</span><span><small>WhatsApp</small><strong>{{wa_label}}</strong></span></a>
+          <a class="contact-item" href="{{ig}}" target="_blank" rel="noopener"><span class="ic">{{icon:instagram}}</span><span><small>Instagram</small><strong>@eikon_studios_stories</strong></span></a>
+          <a class="contact-item" href="{{fb}}" target="_blank" rel="noopener"><span class="ic">{{icon:facebook}}</span><span><small>Facebook</small><strong>eikon studio</strong></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

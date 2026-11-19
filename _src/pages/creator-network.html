@@ -1,0 +1,125 @@
+<main id="main">
+  <section class="page-hero bg-pink" aria-labelledby="page-title">
+    <div class="wrap ph-grid">
+      <div>
+        <p class="eyebrow">Creator network</p>
+        <h1 id="page-title" class="display h-xl">The right creators. The right audience.</h1>
+        <p class="lead">Creator collaborations that connect. We connect brands with relevant influencers and content creators to build meaningful collaborations, expand reach and create engaging brand experiences.</p>
+      </div>
+      <div class="cat-card pose-hover"><img class="pose" src="{{B}}assets/img/cat/cat-promote.webp" alt="eikon cat with a megaphone" width="250" height="215"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Choose your pathway">
+    <div class="wrap">
+      <div class="paths">
+        <div class="path brand reveal">
+          <p class="eyebrow">For brands</p>
+          <h2 class="display">I'm a brand</h2>
+          <ul>
+            <li>Discover creators who fit your brand</li>
+            <li>We organise the collaborations</li>
+            <li>We coordinate the campaign from start to finish</li>
+            <li>Creators are matched to your goals and audience</li>
+          </ul>
+          <button class="btn" type="button" data-path="brand-form" aria-controls="brand-form" aria-expanded="false">I'm a brand <span class="arrow" aria-hidden="true">→</span></button>
+        </div>
+        <div class="path creator reveal">
+          <p class="eyebrow">For creators</p>
+          <h2 class="display">I'm a creator</h2>
+          <ul>
+            <li>Get discovered by brands</li>
+            <li>Access relevant collaboration opportunities</li>
+            <li>Share your profile and content category</li>
+            <li>Express interest in campaigns</li>
+          </ul>
+          <button class="btn btn-pink" type="button" data-path="creator-form" aria-controls="creator-form" aria-expanded="false">I'm a creator <span class="arrow" aria-hidden="true">→</span></button>
+        </div>
+      </div>
+
+      <!-- Brand form -->
+      <div class="form-panel" id="brand-form" hidden>
+        <div class="form-card">
+          <h2 class="display h-md" style="margin-bottom:8px">Find creators for your brand</h2>
+          <p class="muted">Tell us a little about your brand. We'll get back to you to discuss matches.</p>
+          <form data-enquiry>
+            <input type="hidden" name="_subject" value="New creator network enquiry (brand)">
+            <input type="hidden" name="form" value="Creator network: brand">
+            <input type="hidden" name="_template" value="table">
+            <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+            <div class="form-grid">
+              <div class="field"><label for="b-name">Your name <span class="req">*</span></label><input id="b-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
+              <div class="field"><label for="b-email">Email <span class="req">*</span></label><input id="b-email" name="email" type="email" autocomplete="email" required><span class="err">Please enter a valid email.</span></div>
+              <div class="field"><label for="b-brand">Brand name <span class="req">*</span></label><input id="b-brand" name="brand" autocomplete="organization" required><span class="err">Please enter your brand name.</span></div>
+              <div class="field"><label for="b-cat">Industry <span class="opt">(optional)</span></label>
+                <select id="b-cat" name="industry">
+                  <option value="">Choose one</option><option>Jewellery</option><option>Fashion</option><option>Food &amp; cafés</option><option>Beauty</option><option>Product</option><option>Other</option>
+                </select>
+              </div>
+              <div class="field full"><label for="b-msg">What are you looking for? <span class="req">*</span></label><textarea id="b-msg" name="message" placeholder="e.g. 3–5 local food creators for a café launch next month" required></textarea><span class="err">Please tell us a little about what you need.</span></div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-pink" type="submit"><span class="spinner" aria-hidden="true"></span>Send enquiry</button>
+              <button class="btn btn-ghost" type="button" data-whatsapp>Send on WhatsApp</button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Creator form -->
+      <div class="form-panel" id="creator-form" hidden>
+        <div class="form-card">
+          <h2 class="display h-md" style="margin-bottom:8px">Join the creator network</h2>
+          <p class="muted">Share your profile and we'll reach out when a relevant collaboration comes up.</p>
+          <form data-enquiry>
+            <input type="hidden" name="_subject" value="New creator network sign-up (creator)">
+            <input type="hidden" name="form" value="Creator network: creator">
+            <input type="hidden" name="_template" value="table">
+            <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Your name <span class="req">*</span></label><input id="c-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
+              <div class="field"><label for="c-email">Email <span class="req">*</span></label><input id="c-email" name="email" type="email" autocomplete="email" required><span class="err">Please enter a valid email.</span></div>
+              <div class="field"><label for="c-handle">Instagram handle or profile link <span class="req">*</span></label><input id="c-handle" name="profile" placeholder="@yourhandle" required><span class="err">Please share your profile.</span></div>
+              <div class="field"><label for="c-cat">Content category <span class="req">*</span></label>
+                <select id="c-cat" name="category" required>
+                  <option value="">Choose one</option><option>Fashion</option><option>Jewellery &amp; accessories</option><option>Food</option><option>Beauty</option><option>Lifestyle</option><option>Travel</option><option>Tech</option><option>Other</option>
+                </select><span class="err">Please choose a category.</span>
+              </div>
+              <div class="field"><label for="c-city">City <span class="opt">(optional)</span></label><input id="c-city" name="city" autocomplete="address-level2"></div>
+              <div class="field"><label for="c-size">Audience size <span class="opt">(optional)</span></label>
+                <select id="c-size" name="audience_size">
+                  <option value="">Choose one</option><option>Under 10k</option><option>10k–50k</option><option>50k–100k</option><option>100k+</option>
+                </select>
+              </div>
+              <div class="field full"><label for="c-msg">Anything else? <span class="opt">(optional)</span></label><textarea id="c-msg" name="message" placeholder="The kinds of brands and campaigns you'd love to work with"></textarea></div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-pink" type="submit"><span class="spinner" aria-hidden="true"></span>Send my profile</button>
+              <button class="btn btn-ghost" type="button" data-whatsapp>Send on WhatsApp</button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-ink" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title" class="display h-lg">Simple, and handled by us.</h2>
+        </div>
+        <p class="muted">The creator network is a managed service. Our team handles every match and collaboration personally. You won't need to sign up to a platform.</p>
+      </div>
+      <ol class="steps reveal">
+        <li><h3>Enquiry</h3><p>Brands share their goals. Creators share their profile and category.</p></li>
+        <li><h3>Matching</h3><p>We shortlist creators whose content and audience fit the brand.</p></li>
+        <li><h3>Coordination</h3><p>We align on the brief, timelines and deliverables, and keep everyone in sync.</p></li>
+        <li><h3>Delivery</h3><p>Content goes live and the campaign runs, with our team coordinating throughout.</p></li>
+      </ol>
+    </div>
+  </section>
+</main>
